@@ -31,14 +31,23 @@
 
 <!-- ===================== TÜRKÇE ===================== -->
 <h1 id="tr">Fair Backgammon — Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 18 Ağustos 2026 · Uygulama kimliği: <code>com.fairbackgammon.game</code></p>
+<p class="meta">Son güncelleme: 19 Ağustos 2026 · Uygulama kimliği: <code>com.fairbackgammon.game</code></p>
 
 <p>Fair Backgammon (“uygulama”), bir tavla oyunudur. Uygulama <strong>hesap açmanızı istemez</strong>;
 ad, soyad, e-posta, telefon numarası, konum veya rehber gibi bilgileri <strong>toplamaz</strong>.
 Reklam ağı, analitik veya izleme (tracking) yazılımı <strong>içermez</strong>.</p>
 
-<p><strong>Çevrimdışı oyun</strong> (bilgisayara karşı) tamamen cihazınızda çalışır; hiçbir veri
-cihazınızdan çıkmaz. Aşağıda anlatılan veri işleme yalnızca <strong>çevrimiçi oynadığınızda</strong> geçerlidir.</p>
+<p>Uygulamanın <strong>ana ekranı lobidir</strong>. Bu yüzden uygulama <strong>açılışta</strong>
+Google Firebase sunucusuna bağlanır: <strong>anonim bir kimlik</strong> (rastgele bir uid) alır ve
+listede görünebilmeniz için <strong>takma adınızı, durumunuzu ve Güç Puanınızı</strong> yayınlar.
+Bu kimlik e-posta, telefon veya Google hesabınızla <strong>bağlantılı değildir</strong> ve tek başına
+sizi tanımlamaz.</p>
+
+<p><strong>Robota karşı oynadığınız maçlar</strong> tamamen cihazınızda çalışır: hamleler, zarlar ve
+maçın sonucu sunucuya <strong>gönderilmez</strong>. Sunucuya oyun verisi yalnızca
+<strong>çevrimiçi bir rakiple oynarken</strong> gider.</p>
+
+<p>İnternet bağlantısı yoksa uygulama çevrimdışı çalışmaya devam eder; hiçbir veri gönderilemez.</p>
 
 <h2>1. İşlenen veriler</h2>
 
@@ -53,17 +62,20 @@ cihazınızdan çıkmaz. Aşağıda anlatılan veri işleme yalnızca <strong>ç
 <p>Bu dosyalar uygulamanın özel veri alanındadır, başka uygulamalar erişemez ve
 <strong>uygulamayı kaldırdığınızda silinir</strong>.</p>
 
-<h3>b) Çevrimiçi oynarken sunucuya gönderilenler</h3>
-<p>Çevrimiçi mod, Google’ın <strong>Firebase</strong> hizmetlerini kullanır (Realtime Database, sunucu
-konumu: Avrupa Birliği — <code>europe-west1</code>). Gönderilenler:</p>
+<h3>b) Sunucuya gönderilenler</h3>
+<p>Uygulama, Google’ın <strong>Firebase</strong> hizmetlerini kullanır (Realtime Database, sunucu
+konumu: Avrupa Birliği — <code>europe-west1</code>). Ne zaman ne gönderildiği aşağıda:</p>
 <ul>
-  <li><strong>Anonim kimlik (uid):</strong> Firebase Anonymous Authentication ile üretilen rastgele bir
-      kimlik. E-posta, telefon veya Google hesabınızla <strong>bağlantılı değildir</strong>.</li>
-  <li><strong>Takma adınız:</strong> Lobideki diğer oyunculara görünür.</li>
-  <li><strong>Durum ve istatistik:</strong> müsait/bekliyor/oyunda bilgisi, Güç Puanı, galibiyet ve
-      mağlubiyet sayısı, son görülme zaman damgası.</li>
-  <li><strong>Oyun verisi:</strong> hamleler, zar tohumu, sıra bilgisi, oda kodu, davetler ve bağlantının
-      kopmadığını gösteren kalp atışı.</li>
+  <li><strong>Anonim kimlik (uid)</strong> &mdash; <em>açılışta</em>: Firebase Anonymous
+      Authentication ile üretilen rastgele bir kimlik. E-posta, telefon veya Google hesabınızla
+      <strong>bağlantılı değildir</strong>.</li>
+  <li><strong>Takma adınız, durumunuz ve istatistikleriniz</strong> &mdash; <em>açılışta bağlantı
+      kurulunca</em>: müsait/bekliyor/oyunda bilgisi, Güç Puanı, galibiyet ve mağlubiyet sayısı,
+      son görülme zaman damgası. Lobideki diğer oyunculara görünür.</li>
+  <li><strong>Sıralama satırınız</strong> &mdash; <em>ay ve tüm zamanlar tablosu için</em>: takma ad,
+      sezon puanı, Güç Puanı, oynanan maç sayısı.</li>
+  <li><strong>Oyun verisi</strong> &mdash; <em>yalnızca çevrimiçi maç sırasında</em>: hamleler, zar
+      tohumu, sıra bilgisi, oda kodu, davetler ve bağlantının kopmadığını gösteren kalp atışı.</li>
 </ul>
 <p>Sohbet (chat) özelliği <strong>yoktur</strong>; serbest metin olarak yalnızca takma ad gönderilir.</p>
 
@@ -121,14 +133,23 @@ rehber, dosya veya cihaz kimliği izni istemez.</p>
 
 <!-- ===================== ENGLISH ===================== -->
 <h1 id="en">Fair Backgammon — Privacy Policy</h1>
-<p class="meta">Last updated: 18 August 2026 · Application ID: <code>com.fairbackgammon.game</code></p>
+<p class="meta">Last updated: 19 August 2026 · Application ID: <code>com.fairbackgammon.game</code></p>
 
 <p>Fair Backgammon (“the app”) is a backgammon game. It requires <strong>no account</strong> and does
 <strong>not collect</strong> your name, e-mail address, phone number, location or contacts. It contains
 <strong>no advertising network, analytics or tracking</strong> software.</p>
 
-<p><strong>Offline play</strong> (against the computer) runs entirely on your device; no data leaves it.
-The processing described below applies only when you <strong>play online</strong>.</p>
+<p>The app's <strong>main screen is the lobby</strong>. It therefore connects to Google Firebase
+<strong>at start-up</strong>: it obtains an <strong>anonymous ID</strong> (a random uid) and publishes
+your <strong>nickname, status and rating</strong> so that you appear in the player list. This ID is
+<strong>not linked</strong> to your e-mail address, phone number or Google account, and does not
+identify you on its own.</p>
+
+<p><strong>Matches against the computer</strong> run entirely on your device: the moves, the dice and
+the result are <strong>not sent</strong> to the server. Game data is transmitted only while you play
+<strong>against an online opponent</strong>.</p>
+
+<p>Without an internet connection the app keeps working offline; no data can be sent.</p>
 
 <h2>1. Data processed</h2>
 
@@ -143,17 +164,20 @@ The processing described below applies only when you <strong>play online</strong
 <p>These files live in the app’s private storage, are not accessible to other apps and are
 <strong>deleted when you uninstall the app</strong>.</p>
 
-<h3>b) Sent to the server while playing online</h3>
-<p>Online play uses Google <strong>Firebase</strong> services (Realtime Database, server region:
-European Union — <code>europe-west1</code>). The following is sent:</p>
+<h3>b) Sent to the server</h3>
+<p>The app uses Google <strong>Firebase</strong> services (Realtime Database, server region:
+European Union — <code>europe-west1</code>). What is sent, and when:</p>
 <ul>
-  <li><strong>Anonymous identifier (uid):</strong> a random id created by Firebase Anonymous
-      Authentication. It is <strong>not linked</strong> to your e-mail, phone number or Google account.</li>
-  <li><strong>Your nickname:</strong> visible to other players in the lobby.</li>
-  <li><strong>Status and statistics:</strong> available/waiting/in-game, rating, win and loss counts,
-      last-seen timestamp.</li>
-  <li><strong>Game data:</strong> moves, dice seed, turn information, room code, invitations and a
-      heartbeat used to detect disconnections.</li>
+  <li><strong>Anonymous identifier (uid)</strong> &mdash; <em>at start-up</em>: a random id created
+      by Firebase Anonymous Authentication. It is <strong>not linked</strong> to your e-mail, phone
+      number or Google account.</li>
+  <li><strong>Your nickname, status and statistics</strong> &mdash; <em>once the connection is
+      established at start-up</em>: available/waiting/in-game, rating, win and loss counts, last-seen
+      timestamp. Visible to other players in the lobby.</li>
+  <li><strong>Your leaderboard row</strong> &mdash; <em>for the monthly and all-time tables</em>:
+      nickname, season points, rating, number of matches played.</li>
+  <li><strong>Game data</strong> &mdash; <em>only during an online match</em>: moves, dice seed, turn
+      information, room code, invitations and a heartbeat used to detect disconnections.</li>
 </ul>
 <p>There is <strong>no chat feature</strong>; the nickname is the only free-text field transmitted.</p>
 

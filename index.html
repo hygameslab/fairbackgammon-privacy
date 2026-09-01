@@ -31,11 +31,13 @@
 
 <!-- ===================== TÜRKÇE ===================== -->
 <h1 id="tr">Fair Backgammon — Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 20 Ağustos 2026 · Uygulama kimliği: <code>com.fairbackgammon.game</code></p>
+<p class="meta">Son güncelleme: 31 Ağustos 2026 · Uygulama kimliği: <code>com.fairbackgammon.game</code></p>
 
 <p>Fair Backgammon (“uygulama”), bir tavla oyunudur. Uygulama <strong>hesap açmanızı istemez</strong>;
 ad, soyad, e-posta, telefon numarası, konum veya rehber gibi bilgileri <strong>toplamaz</strong>.
-Reklam ağı, analitik veya izleme (tracking) yazılımı <strong>içermez</strong>.</p>
+Uygulama <strong>Google AdMob</strong> aracılığıyla reklam gösterir; ayrıntısı için
+aşağıdaki <a href="#tr-reklam">Reklamlar</a> bölümüne bakın. Analitik veya kullanıcı izleme
+(tracking) yazılımı <strong>içermez</strong>.</p>
 
 <p>Uygulamanın <strong>ana ekranı lobidir</strong>. Bu yüzden uygulama <strong>açılışta</strong>
 Google Firebase sunucusuna bağlanır: <strong>anonim bir kimlik</strong> (rastgele bir uid) alır ve
@@ -89,17 +91,43 @@ takma adın ve (kendin yazarsan) görüş/hata bildirimin.</p>
 tarafından okunmaz ve saklanmaz; Google’ın kendi politikaları geçerlidir
 (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>).</p>
 
-<h2>2. Verilerin kullanım amacı</h2>
+<h2 id="tr-reklam">2. Reklamlar (Google AdMob)</h2>
+<p>Uygulama, <strong>Google AdMob</strong> ağından <strong>geçiş reklamı</strong> gösterir.</p>
+<ul>
+  <li><strong>Ne zaman:</strong> yalnızca bir oyun bittikten sonra, sonuç ekranından
+      çıkarken — ve her oyunda değil, birkaç oyunda bir. Maçın ortasında, hamle
+      sırasında veya uygulama açılırken <strong>hiçbir zaman</strong> reklam çıkmaz.</li>
+  <li><strong>Hangi veriler:</strong> reklamı seçmek, göstermek, ölçmek ve sahte tıklamayı
+      engellemek için Google; cihazınızın <strong>reklam kimliğini (Advertising ID)</strong>,
+      IP adresini, cihaz ve uygulama bilgilerini işler. Bu veriler doğrudan Google'a gider;
+      uygulama onları <strong>okumaz ve saklamaz</strong>.</li>
+  <li><strong>Oyun verileriniz reklam ağına gitmez:</strong> takma adınız, Güç Puanınız,
+      maçlarınız ve hamleleriniz AdMob ile <strong>paylaşılmaz</strong>. Reklam tarafı ile
+      oyun tarafı birbirinden ayrıdır.</li>
+  <li><strong>Denetim sizde:</strong> Android'de <em>Ayarlar → Gizlilik → Reklamlar</em>
+      bölümünden reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz. Sildiğinizde
+      reklamlar kişiselleştirilmez.</li>
+  <li><strong>Reklamlar kapatılabilir:</strong> gösterim uzaktan yönetilir. Kapalı olduğunda
+      reklam yazılımı <strong>hiç başlatılmaz</strong> ve reklamla ilgili hiçbir veri
+      gönderilmez.</li>
+</ul>
+<p>Google'ın reklam hizmetlerinde veriyi nasıl kullandığı:
+<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
+<h2>3. Verilerin kullanım amacı</h2>
 <ul>
   <li>Çevrimiçi oyuncu listesini göstermek ve rakip eşleştirmek</li>
   <li>Oyunu iki cihaz arasında senkron yürütmek</li>
   <li>Güç Puanını hesaplayıp göstermek</li>
   <li>Rakibin bağlantısının koptuğunu tespit etmek</li>
+  <li>Reklam göstermek (bkz. bölüm 2)</li>
 </ul>
-<p>Veriler <strong>satılmaz</strong>, reklam amacıyla kullanılmaz ve üçüncü taraflarla paylaşılmaz.
-Google yalnızca altyapı sağlayıcısı (veri işleyen) konumundadır.</p>
+<p>Sunucuya gönderilen oyun verileri (takma ad, durum, Güç Puanı, hamleler)
+<strong>satılmaz</strong>, reklam amacıyla kullanılmaz ve üçüncü taraflarla paylaşılmaz;
+Firebase tarafında Google yalnızca altyapı sağlayıcısı (veri işleyen) konumundadır.
+Reklam gösterimi bundan <strong>ayrı</strong> bir iştir ve bölüm 2'de anlatılmıştır.</p>
 
-<h2>3. Saklama süresi</h2>
+<h2>4. Saklama süresi</h2>
 <ul>
   <li>Lobiden ayrıldığınızda veya uygulamayı kapattığınızda kaydınız (<code>/players</code>,
       <code>/open</code>, <code>/inbox</code>, oda kodunuz) <strong>silinir</strong>.</li>
@@ -109,7 +137,7 @@ Google yalnızca altyapı sağlayıcısı (veri işleyen) konumundadır.</p>
   <li>Cihazdaki dosyalar uygulamayı kaldırana kadar durur.</li>
 </ul>
 
-<h2>4. Haklarınız</h2>
+<h2>5. Haklarınız</h2>
 <p>Uygulama sizi kimliklendiren bir bilgi tutmadığından, verinizi silmek için:</p>
 <ul>
   <li>Takma adınızı değiştirebilir (yeni ad eskisinin yerine yazılır),</li>
@@ -118,30 +146,41 @@ Google yalnızca altyapı sağlayıcısı (veri işleyen) konumundadır.</p>
 </ul>
 <p>KVKK ve GDPR kapsamındaki talepleriniz için aşağıdaki e-posta adresinden ulaşabilirsiniz.</p>
 
-<h2>5. Çocuklar</h2>
+<h2>6. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve onlardan bilerek veri toplamaz.
 Takma ad alanı serbest metin olduğundan, <strong>gerçek adınızı veya kişisel bilgilerinizi
-takma ad olarak yazmayın</strong>; bu alan diğer oyunculara görünür.</p>
+takma ad olarak yazmayın</strong>; bu alan diğer oyunculara görünür.
+Gösterilen reklamlar Google tarafından seçilir; uygulama Play'de <strong>13 yaş ve üzeri</strong>
+hedef kitleye işaretlidir ve çocuklara yönelik olarak yapılandırılmamıştır.</p>
 
-<h2>6. İzinler</h2>
-<p>Uygulama yalnızca <code>INTERNET</code> iznini ister (çevrimiçi mod için). Konum, kamera, mikrofon,
-rehber, dosya veya cihaz kimliği izni istemez.</p>
+<h2>7. İzinler</h2>
+<p>Uygulamanın istediği izinler:</p>
+<ul>
+  <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> — çevrimiçi oyun ve reklam</li>
+  <li><code>VIBRATE</code> — titreşimli geri bildirim (varsayılan kapalı)</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — reklam kimliği (bölüm 2)</li>
+  <li><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>, <code>READ_BASIC_PHONE_STATE</code>
+      — reklam yazılımının kendi getirdiği yardımcı izinler</li>
+</ul>
+<p>Konum, kamera, mikrofon, rehber veya dosya izni <strong>istemez</strong>.</p>
 
-<h2>7. Değişiklikler</h2>
+<h2>8. Değişiklikler</h2>
 <p>Bu politika güncellenirse bu sayfadaki “Son güncelleme” tarihi değişir.</p>
 
-<h2>8. İletişim</h2>
+<h2>9. İletişim</h2>
 <p>Sorularınız için: <a href="mailto:hygameslab@gmail.com">hygameslab@gmail.com</a></p>
 
 <hr>
 
 <!-- ===================== ENGLISH ===================== -->
 <h1 id="en">Fair Backgammon — Privacy Policy</h1>
-<p class="meta">Last updated: 20 August 2026 · Application ID: <code>com.fairbackgammon.game</code></p>
+<p class="meta">Last updated: 31 August 2026 · Application ID: <code>com.fairbackgammon.game</code></p>
 
 <p>Fair Backgammon (“the app”) is a backgammon game. It requires <strong>no account</strong> and does
-<strong>not collect</strong> your name, e-mail address, phone number, location or contacts. It contains
-<strong>no advertising network, analytics or tracking</strong> software.</p>
+<strong>not collect</strong> your name, e-mail address, phone number, location or contacts. The app
+<strong>does show ads</strong> through <strong>Google AdMob</strong> — see the
+<a href="#en-ads">Advertising</a> section below. It contains <strong>no analytics or user-tracking</strong>
+software.</p>
 
 <p>The app's <strong>main screen is the lobby</strong>. It therefore connects to Google Firebase
 <strong>at start-up</strong>: it obtains an <strong>anonymous ID</strong> (a random uid) and publishes
@@ -195,17 +234,43 @@ and similar standard request metadata while handling those requests. The app nei
 this data; Google’s own policies apply
 (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>).</p>
 
-<h2>2. Purpose of processing</h2>
+<h2 id="en-ads">2. Advertising (Google AdMob)</h2>
+<p>The app shows <strong>interstitial ads</strong> from the <strong>Google AdMob</strong> network.</p>
+<ul>
+  <li><strong>When:</strong> only after a game has finished, as you leave the result screen —
+      and not after every game, but once every few games. An ad is <strong>never</strong> shown
+      during a match, while you are moving, or when the app starts.</li>
+  <li><strong>What data:</strong> to select, show and measure ads and to prevent click fraud,
+      Google processes your device's <strong>advertising ID</strong>, IP address, and device and
+      app information. This data goes directly to Google; the app itself neither
+      <strong>reads nor stores</strong> it.</li>
+  <li><strong>Your game data is not sent to the ad network:</strong> your nickname, rating,
+      matches and moves are <strong>not shared</strong> with AdMob. The advertising side and the
+      game side are kept separate.</li>
+  <li><strong>You are in control:</strong> on Android you can reset or completely delete your
+      advertising ID under <em>Settings → Privacy → Ads</em>. If you delete it, ads are not
+      personalised.</li>
+  <li><strong>Ads can be switched off:</strong> ad display is controlled remotely. While it is
+      off, the advertising software is <strong>never started</strong> and no advertising-related
+      data is sent.</li>
+</ul>
+<p>How Google uses data in its advertising products:
+<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
+<h2>3. Purpose of processing</h2>
 <ul>
   <li>Showing the list of online players and matching opponents</li>
   <li>Keeping the game in sync between two devices</li>
   <li>Calculating and displaying the rating</li>
   <li>Detecting that an opponent has disconnected</li>
+  <li>Showing ads (see section 2)</li>
 </ul>
-<p>Data is <strong>never sold</strong>, is not used for advertising and is not shared with third
-parties. Google acts solely as the infrastructure provider (data processor).</p>
+<p>The game data sent to the server (nickname, status, rating, moves) is <strong>never sold</strong>,
+is not used for advertising and is not shared with third parties; on the Firebase side Google acts
+solely as the infrastructure provider (data processor). Advertising is a <strong>separate</strong>
+matter and is described in section 2.</p>
 
-<h2>3. Retention</h2>
+<h2>4. Retention</h2>
 <ul>
   <li>When you leave the lobby or close the app, your records (<code>/players</code>, <code>/open</code>,
       <code>/inbox</code>, your room code) are <strong>deleted</strong>.</li>
@@ -215,7 +280,7 @@ parties. Google acts solely as the infrastructure provider (data processor).</p>
   <li>On-device files remain until you uninstall the app.</li>
 </ul>
 
-<h2>4. Your rights</h2>
+<h2>5. Your rights</h2>
 <p>Since the app holds no information that identifies you, you can remove your data by:</p>
 <ul>
   <li>changing your nickname (the new one replaces the old), or</li>
@@ -224,19 +289,28 @@ parties. Google acts solely as the infrastructure provider (data processor).</p>
 </ul>
 <p>For requests under GDPR or the Turkish data protection law (KVKK), use the contact address below.</p>
 
-<h2>5. Children</h2>
+<h2>6. Children</h2>
 <p>The app is not directed at children under 13 and does not knowingly collect data from them. Because
 the nickname is a free-text field, <strong>do not enter your real name or any personal
-information</strong> there — it is visible to other players.</p>
+information</strong> there — it is visible to other players.
+Ads are selected by Google; the app is marked for a <strong>13+</strong> target audience on Google
+Play and is not configured as child-directed.</p>
 
-<h2>6. Permissions</h2>
-<p>The app requests only the <code>INTERNET</code> permission (for online play). It does not request
-location, camera, microphone, contacts, file or device-identifier permissions.</p>
+<h2>7. Permissions</h2>
+<p>The app requests the following permissions:</p>
+<ul>
+  <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> — online play and ads</li>
+  <li><code>VIBRATE</code> — haptic feedback (off by default)</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — advertising ID (section 2)</li>
+  <li><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>, <code>READ_BASIC_PHONE_STATE</code>
+      — helper permissions brought in by the advertising software</li>
+</ul>
+<p>It does <strong>not</strong> request location, camera, microphone, contacts or file access.</p>
 
-<h2>7. Changes</h2>
+<h2>8. Changes</h2>
 <p>If this policy changes, the “Last updated” date on this page will change.</p>
 
-<h2>8. Contact</h2>
+<h2>9. Contact</h2>
 <p>Questions: <a href="mailto:hygameslab@gmail.com">hygameslab@gmail.com</a></p>
 
 </body>
